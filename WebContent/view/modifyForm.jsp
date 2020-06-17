@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp" %>
+<style>
+	.text-info{
+		color:red !important;
+	}	
+</style>
 <form id="modifyform" action="../modify.do" method="post">
 	<div class="card"  style="width: 40rem;margin:40px auto;">	
 		<div class="card-header">
@@ -37,3 +42,9 @@
 <%--폼 검증 --%>
 <%-- 버튼 이벤트 --%>
 <%@ include file="../layout/footer.jsp" %>
+<%-- 사용자 validate 코드 삽입하기 --%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- jquery-validation plugin -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<!-- 사용자 작성 유효성 검증 -->
+<script src="../js/modify.js"></script>

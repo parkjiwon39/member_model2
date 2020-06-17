@@ -59,7 +59,7 @@ $(function(){
 		//에러 메세지 위치 지정
 		errorElement:"em",
 		errorPlacement: function(error, element){
-			error.addClass("help-block");
+			error.addClass("help_block");
 			if(element.prop("type")==="checkbox"){
 				error.insertAfter(element.next("label"));
 			}else{
